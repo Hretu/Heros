@@ -109,7 +109,7 @@ public class Register extends AppCompatActivity {
     private void loadFromURL(){
         StrictMode();
         try {
-            String imgURL = "https://www.hgtv.com/outdoors/flowers-and-plants/flowers/white-bedding-incredible-ivory-flowers-pictures";
+            String imgURL = "http://10.0.2.2:3000//uploads/flower.jpeg";
             URL url = new URL(imgURL);
             imgImage.setImageBitmap(BitmapFactory.decodeStream((InputStream)url.getContent()));
         }  catch (IOException e) {
